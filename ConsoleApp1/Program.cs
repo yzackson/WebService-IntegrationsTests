@@ -10,24 +10,37 @@ namespace RequisicoesWeb
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Requestdefault();
           
         }
-        
+
+
         public static void Requestdefault()
         {
-            var client = new RestClient("https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.0b035a7f72bd6f9fbfbfaf91dc0fed82.dc83ce0dd574093823e990755adc7ab4&client_id=1000.SNG0SRKGYG1637H919GEV80ZGGG1DB&client_secret=bd8ea95279038218b987174413b5be631b33b732da&redirect_uri=http://genesistelecom.com.br&grant_type=refresh_token");
+            // original
+            //var client = new RestClient("https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.0b035a7f72bd6f9fbfbfaf91dc0fed82.dc83ce0dd574093823e990755adc7ab4&client_id=1000.SNG0SRKGYG1637H919GEV80ZGGG1DB&client_secret=bd8ea95279038218b987174413b5be631b33b732da&redirect_uri=http://genesistelecom.com.br&grant_type=refresh_token");
+
+            /*
+            // isaac
+            string refresh_token = "1000.d0030c54972ac692b232a99672c0841d.55ece152f7f7e313094b5b9585cfffafy";
+            string client_id = "1000.93TX9PGEHTFSYWLXKVB0BHYL0GVBHB";
+            string client_secret = "e52aa02e821731fc46ee2aa3005efbb09a3a381883";
+            string redirect_uri = "https://www.genesistelecom.com.br";
+            */
+
+            var client = new RestClient("https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.53dca536d134c51eeda91b38278835e0.a6ff29bf56bf87f441e82ca36325b877&client_id=1000.93TX9PGEHTFSYWLXKVB0BHYL0GVBHB&client_secret=e52aa02e821731fc46ee2aa3005efbb09a3a381883&redirect_uri=https://www.genesistelecom.com.br&grant_type=refresh_token");
+            
             client.Timeout = -1;
             var request = new RestRequest(Method.POST);
             IRestResponse response = client.Execute(request);
-            //Console.WriteLine(response.Content);
+            Console.WriteLine("\n\n" + response.Content + "\n\n");
 
             var post = JsonConvert.DeserializeObject<Token>(response.Content);
 
-                Console.WriteLine("accestoken= " + post.access_token);
-            //Console.ReadLine();
+            Console.WriteLine("\n\naccestoken= " + post.access_token);
+            Console.WriteLine("\n\n");
             
             
             Random randNum = new Random();
@@ -38,7 +51,7 @@ namespace RequisicoesWeb
 
             string to = "2730252728";
             string from = "27998949889";
-            string zohouser = "35560727";
+            string zohouser = "738938680";
             //israel 35560727
             //isaac 738769770
 

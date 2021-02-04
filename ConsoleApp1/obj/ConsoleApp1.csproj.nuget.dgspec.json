@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Isaac Aragão\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\Isaac Pires\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Isaac Aragão\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\Isaac Pires\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Isaac Aragão\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Isaac Pires\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\Isaac Aragão\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj",
-        "packagesPath": "C:\\Users\\Isaac Aragão\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Isaac Aragão\\source\\repos\\ConsoleApp1\\obj\\",
+        "projectPath": "C:\\Users\\Isaac Pires\\source\\repos\\ConsoleApp1\\ConsoleApp1.csproj",
+        "packagesPath": "C:\\Users\\Isaac Pires\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Isaac Pires\\source\\repos\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Isaac Aragão\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Isaac Pires\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
